@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let defaults = UserDefaults.init(suiteName: "group.terrypoc")
+        defaults?.set("Getting data from main app viewcontroller", forKey: "testKey")
     }
 
     override func didReceiveMemoryWarning() {
